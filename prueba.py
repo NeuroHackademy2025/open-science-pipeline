@@ -92,3 +92,6 @@ def create_project_structure(project_name: str):
     create_metadata_files(file_base_path)
 
     print(f"[bold green]Project '{project_name}' structure created successfully![/bold green]")
+
+
+    # adding a test message (Lital)

@@ -6,6 +6,7 @@ import streamlit as st
 from pathlib import Path
 import zipfile
 
+
 # Helper function to create directory structure
 def create_directory_structure(base_path):
     """Create the project folder structure under the given base path."""
@@ -30,14 +31,14 @@ def create_directory_structure(base_path):
             "02_figures": "Figures and visualizations",
             "03_tables": "Tables of results"
         },
-        "05_meta": ""  
+        "05_meta": ""
     }
-    
+
     # Create directories based on the structure
     for parent_dir, sub_dirs in dirs_to_create.items():
         parent_path = base_path / parent_dir
         parent_path.mkdir(parents=True, exist_ok=True)
-        
+
         # If the sub_dir is a dictionary, create subfolders under the parent directory
         if isinstance(sub_dirs, dict):
             for sub_dir, description in sub_dirs.items():
@@ -53,12 +54,13 @@ def create_directory_structure(base_path):
 # Function to handle file uploads with optional type restriction
 def upload_files(category_name, allowed_types=None):
     """Upload files for the given category, with an optional file type restriction."""
-    st.write(f"Upload {category_name} files here:")
-    
+    st.write(f"Upload {category_name} files here: ")
+
     # Restricting file types only if allowed_types is provided
     uploaded_files = st.file_uploader(f"Choose {category_name} files", type=allowed_types, accept_multiple_files=True)
-    
+
     return uploaded_files
+
 
 # Function to save files into a specific folder
 def save_files(uploaded_files, target_folder):
@@ -71,6 +73,7 @@ def save_files(uploaded_files, target_folder):
             f.write(uploaded_file.getbuffer())
         st.write(f"Saved file: {uploaded_file.name} to {target_folder}")
 
+
 # Function to organize and compress the files into a zip folder
 def create_zip_folder(base_path, project_name):
     """Create a zip file of the project folder and include a specific README.md"""
@@ -78,7 +81,7 @@ def create_zip_folder(base_path, project_name):
     zip_filepath = base_path / zip_filename
 
     # Path to the README.md you want to include
-    readme_path = Path("./Example_Repos/Good_Repo/README.md")
+    readme_path = Path("./Example_Repos/src/README.md")
 
     # Create a Zip file with the entire project folder (excluding the zip file itself)
     with zipfile.ZipFile(zip_filepath, 'w', zipfile.ZIP_DEFLATED) as zipf:
@@ -90,7 +93,7 @@ def create_zip_folder(base_path, project_name):
             st.write(f"Added {readme_path} to the ZIP file.")
         else:
             st.error(f"README.md file not found at {readme_path}")
-        
+
         # Add all files and folders from the project directory to the ZIP
         for root, dirs, files in os.walk(base_path):
             for file in files:

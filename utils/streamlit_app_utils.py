@@ -81,7 +81,7 @@ def create_zip_folder(base_path, project_name):
     zip_filepath = base_path / zip_filename
 
     # Path to the README.md you want to include
-    readme_path = Path("./Example_Repos/src/README.md")
+    readme_path = Path("./src/README.md")
 
     # Create a Zip file with the entire project folder (excluding the zip file itself)
     with zipfile.ZipFile(zip_filepath, 'w', zipfile.ZIP_DEFLATED) as zipf:

@@ -10,12 +10,11 @@ Florencia Altschuler,Annika Andersson,Jaime Rios, Iliana Sandoval
 
 Features:
 - Creates a local repository
-- Automated creation of FAIR-aligned folder structured and organized
+- Automated creation of FAIR-aligned folder structured
 - Templates for metadata and README files
 - Promotes reproducibility and transparency
 - Compatible with OSF, Zenodo, GitHub
 
-License:
 MIT License
 
 The repository include the following folders:

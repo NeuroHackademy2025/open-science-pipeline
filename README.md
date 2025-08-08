@@ -9,7 +9,7 @@ Creators:
 Florencia Altschuler,Annika Andersson,Jaime Rios, Iliana Sandoval
 
 Features:
--Creates a local repository
+- Creates a local repository
 - Automated creation of FAIR-aligned folder structured and organized
 - Templates for metadata and README files
 - Promotes reproducibility and transparency

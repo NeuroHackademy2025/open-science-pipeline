@@ -1,18 +1,14 @@
 README
 ======
-
-Project title:
 FAIRyTale 
 Give your data a happily-ever-after
 
-Description: 
 This project provides a program to automatically create a local repository structured according to **FAIR** (Findable, Accessible, Interoperable, Reusable) and **Open Science** principles. It is designed to help researchers organize and prepare their materials for publication in open repositories like OSF, Zenodo, or GitHub.
 
 Creators:
 Florencia Altschuler,Annika Andersson,Jaime Rios, Iliana Sandoval
 
 Features:
-
 -Creates a local repository
 - Automated creation of FAIR-aligned folder structured and organized
 - Templates for metadata and README files
@@ -21,8 +17,6 @@ Features:
 
 License:
 MIT License
-
-Project Structure:
 
 The repository include the following folders:
 

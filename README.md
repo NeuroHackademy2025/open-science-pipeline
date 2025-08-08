@@ -1,6 +1,7 @@
 README
 ======
 FAIRyTale 
+https://fairytale-open-pipeline.streamlit.app/
 
 Give your data a happily-ever-after
 

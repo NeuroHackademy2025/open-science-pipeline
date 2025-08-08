@@ -1,6 +1,7 @@
 README
 ======
 FAIRyTale 
+
 Give your data a happily-ever-after
 
 This project provides a program to automatically create a local repository structured according to **FAIR** (Findable, Accessible, Interoperable, Reusable) and **Open Science** principles. It is designed to help researchers organize and prepare their materials for publication in open repositories like OSF, Zenodo, or GitHub.

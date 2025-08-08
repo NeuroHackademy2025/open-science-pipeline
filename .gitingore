@@ -85,4 +85,4 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
-.devcontainer
+.devcontainer/
